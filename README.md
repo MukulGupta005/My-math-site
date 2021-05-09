@@ -1,3 +1,4 @@
+![alt text](http://url/to/https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)
 # MyMathsSite
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
