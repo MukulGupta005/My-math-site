@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MyMathsSite</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body style="background-image: url('https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');">
+  
+  <!-- navbar -->
+  <nav id="navbar">
+    <ul>
+        <li class="item"><a href="#pre">Square</a></li>
+        <li class="item"><a href="#add">Add</a></li>
+        <li class="item"><a href="#sub">Subract</a></li>
+        <li class="item"><a href="#mult">Multiply</a></li>
+        <li> <label class="switch">
+          <input type="checkbox" onclick="myFunction()">
+          <span class="slider round"></span>
+        </label></li>
+    </ul>
+</nav>
+  <h1>Check wheather number is a Perfect square or not</h1>
+    <script>
+      function add()
+      {
+        var a,b,c;
+      a=document.getElementById('n3').value;
+      b=document.getElementById('n4').value;
+      c=parseInt(a)+parseInt(b);
+      document.getElementById("p").innerHTML=c;
+      }
+      function sub()
+      {
+        var x,y,z;
+      x=document.getElementById('n5').value;
+      y=document.getElementById('n6').value;
+      z=parseInt(x)-parseInt(y);
+      document.getElementById("o").innerHTML=z;
+      }
+      function mult()
+      {
+        var x,y,z;
+      x=document.getElementById('n7').value;
+      y=document.getElementById('n8').value;
+      z=parseInt(x)*parseInt(y);
+      document.getElementById("b").innerHTML=z;
+      }
+      function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+        function isPerfectSquare()
+        {
+          var n=document.getElementById('number').value;
+          var l;
+          if(((n**0.5)**2)==n)
+          {
+            l=n+" is a perfect square"
+          }
+          else
+          {
+
+            l=n+" is not a perfect square"
+          }
+        document.getElementById("d").innerHTML=l;
+    }
+    //  logic for findin the perfect square between he given range
+    function perfectSquares(){
+      var l,r;
+      l=document.getElementById('n1').value;
+      r=document.getElementById('n2').value;
+        for (let i = l; i <= r; i++)
+        {
+            if ((i**0.5) == parseInt(i**0.5))
+                document.write(i + " ");
+        }
+    }   
+        </script>
+        <!-- body of the perfect square function -->
+        <section id="pre">
+          <br>
+          <p>Enter the number</p> 
+          <br>
+          <input type="number" value="" id="number"><br><br><br>
+          <input type="submit" value="Result" onclick="isPerfectSquare()">
+          <br>
+          <p id="d"></p>
+        </section>
+<br>
+<hr>
+<!-- body of the perfect square between the given range -->
+<h1>Find the perfect square between the given ranges</h1>
+<section id="perfect">
+  <br>
+ <p>Enter the minimum range</p>
+ <br>
+  <input type="number" value="" id="n1"><br><br>
+  <p>Enter the maximum range:</p>
+  <br>
+  <input type="number" value="" id="n2"><br><br>
+  <input type="submit" value="Result" onclick="perfectSquares()">
+  <br>
+</section>
+<hr>
+<!-- body of addition -->
+<h1>Add two numbers</h1>
+<section id="add">
+  <br>
+ <p>Enter the first number</p>
+ <br>
+  <input type="number" value="" id="n3"><br><br>
+  <p>Enter the second number</p>
+  <br>
+  <input type="number" value="" id="n4"><br><br>
+  <input type="submit" value="Result" onclick="add()">
+  <br>
+  <p id="p"></p>
+</section>
+<hr>
+<h1>Subract two numbers</h1>
+<section id="sub">
+  <br>
+ <p>Enter the first number</p>
+ <br>
+  <input type="number" value="" id="n5"><br><br>
+  <p>Enter the second number</p>
+  <br>
+  <input type="number" value="" id="n6"><br><br>
+  <input type="submit" value="Result" onclick="sub()">
+  <br>
+  <p id="o"></p>
+</section>
+<hr>
+<h1>Multiply two numbers</h1>
+<section id="mult">
+  <br>
+ <p>Enter the first number</p>
+ <br>
+  <input type="number" value="" id="n7"><br><br>
+  <p>Enter the second number</p>
+  <br>
+  <input type="number" value="" id="n8"><br><br>
+  <input type="submit" value="Result" onclick="mult()">
+  <br>
+  <p id="b"></p>
+</section>
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2021 Copyright:
+    <a href="https://falcon.com/"> falcon.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</body>
+</html>
