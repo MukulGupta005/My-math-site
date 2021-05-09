@@ -1,4 +1,7 @@
-![alt text](http://url/to/https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)
+# Preview of a website
+![Screenshot (130)](https://user-images.githubusercontent.com/54330746/117567024-abb2a180-b0d7-11eb-9ece-c00a8b9f4f14.png)
+![Screenshot (131)](https://user-images.githubusercontent.com/54330746/117567036-b40adc80-b0d7-11eb-887f-d026dd29596e.png)
+![Screenshot (129)](https://user-images.githubusercontent.com/54330746/117567035-b40adc80-b0d7-11eb-9a96-a24287008e2f.png)
 # MyMathsSite
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
